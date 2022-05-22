@@ -1,0 +1,507 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "navbar navbar navbar"
+    "homeAside homeAside homeAside"
+    "iframeText iframeText iframe"
+    "foo foo foo";
+}
+
+.navbar {
+  grid-area: navbar;
+  display: flex;
+  justify-content: space-between;
+  margin-top: -0.5rem;
+  background-color: #e9f3e3;
+  height: 14vh;
+}
+
+.homeAside {
+  grid-area: homeAside;
+}
+
+.homeAside2 {
+  display: flex;
+  margin-left: 4rem;
+}
+
+.iframe-text {
+  grid-area: iframeText;
+  font-size: 30px;
+  padding: 25px;
+  letter-spacing: 5px;
+  color: #e7f3df;
+  background-color: #7c7a7d;
+}
+
+.iframe {
+  grid-area: iframe;
+  border: 8px solid white;
+}
+
+.imgText {
+  font-size: 65px;
+  letter-spacing: 5px;
+  color: #737a6e;
+  padding: 10px;
+  margin-left: 4rem;
+}
+
+li {
+  display: inline-block;
+  list-style: none;
+  margin-top: 5px;
+  margin-right: 45px;
+  color: rgba(20, 18, 18, 0.533);
+  font-size: 20px;
+}
+
+li:hover {
+  color: rgba(20, 18, 18, 0.28);
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.links-margin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 4rem;
+}
+
+.logo {
+  width: auto;
+  padding: 5px;
+  margin-left: 4rem;
+}
+
+.homeImg {
+  width: 90%;
+  height: 100vh;
+  margin: -25vh 0 4vh 4.5rem;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.homePsico {
+  width: 50%;
+}
+
+.foo {
+  grid-area: foo;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 4rem;
+  background-color: #e9f3e3;
+  height: 8vh;
+  color: rgba(20, 18, 18, 0.533);
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+.redes-sociales {
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.redes-sociales:hover {
+  color: rgba(20, 18, 18, 0.28);
+}
+
+.formulario {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 75%;
+  margin-top: 5rem;
+  margin-left: 30rem;
+  border: 2px solid rgba(20, 18, 18, 0.533); 
+  border-radius: 5%;
+}
+
+.form {
+  color: rgba(20, 18, 18, 0.533);
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  width: 80%;
+  text-align: center;
+}
+
+.servicios {
+  display: flex;
+  margin-left: 4rem;
+}
+
+.iconos {
+  width: 12%;
+  margin-left: 12rem;
+}
+
+#servicioTitle {
+  margin: 4rem 0 4rem 8rem;
+  font-size: 50px;
+  letter-spacing: 3px;
+}
+
+.sectionServicios {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  margin-top: 0rem;
+  margin-left: 7rem;
+  margin-bottom: 4rem;
+  position: absolute;
+}
+
+.pServicio {
+  color: rgba(20, 18, 18, 0.533);
+  width: 6rem;
+  margin-left: 17rem;
+  font-size: 20px;
+}
+
+.sectionDesc {
+  color: rgba(0, 0, 0, 0.722);
+  letter-spacing: 1.2px;
+  font-size: 16px;
+  width: 70%;
+  font-weight: normal;
+  padding: 20px;
+  margin-left: 11rem;
+  margin-top: 4rem;
+}
+
+.pDesc {
+  border: double 2px black;
+  padding: 10px;
+  margin-top: 2.5rem;
+}
+
+.pDesc:hover {
+  border-color: rgb(50, 159, 196);
+}
+
+@media only screen and (min-width: 300px) and (max-width: 780px) {
+
+  .container {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+
+  .navbar {
+    width: 100vw;
+    height: 10vh;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  li {
+    margin-right: 25px;
+    margin-left: 25px;
+    font-size: 15px;
+  }
+
+  .links-margin {
+    margin-left: 5rem;
+  }
+
+  .homeImg {
+    width: 100vw;
+    height: auto;
+    margin: auto;
+  }
+
+  .imgText {
+    font-size: 15px;
+    letter-spacing: 2px;
+    padding: 2px;
+    margin-left: 0rem;
+  }
+
+  .homeAside2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .homePsico {
+    width: 100vw;
+    height: auto;
+    margin-right: 15rem;
+    margin-left: -4rem;
+    margin-top: 2rem;
+  }
+
+  .iframe-text {
+    font-size: 12px;
+    padding: 2px;
+    margin-left: -4rem;
+    letter-spacing: 0px;
+  }
+
+  .iframe {
+    display: none;
+  }
+
+  .foo {
+    justify-content: flex-start;
+    width: 100vw;
+    margin-top: 1rem;
+    margin-left: 0rem;
+    height: 8vh;
+    font-size: 11px;
+    letter-spacing: 1px;
+  }
+  
+  .redes-sociales {
+    margin-left: 2rem;
+  }
+
+  .formulario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 10px;
+    width: 65vw;
+    height: 70vh;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 4rem;
+    border: 2px solid rgba(20, 18, 18, 0.533); 
+    border-radius: 5%;
+  }
+  
+  .form {
+    color: rgba(20, 18, 18, 0.533);
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 80%;
+    text-align: center;
+  }
+
+  .bodyService {
+    overflow-x: hidden;
+  }
+
+  .servicios {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20rem;
+  }
+  
+  .iconos {
+    width: 45%;
+    margin-right: -5rem;
+  }
+  
+  #servicioTitle {
+    margin: 2rem 0 2rem 3.5rem;
+    font-size: 25px;
+    letter-spacing: 3px;
+  }
+  
+  .sectionServicios {
+    display: none;
+  }
+  
+  .sectionDesc {
+    color: rgba(0, 0, 0, 0.722);
+    letter-spacing: 1.2px;
+    font-size: 12px;
+    width: 80%;
+    font-weight: normal;
+    padding: 5px;
+    margin-left: 4rem;
+    margin-top: 1rem;
+  }
+  
+  .pDesc {
+    border: double 2px black;
+    padding: 10px;
+    margin-top: 2.5rem;
+  }
+  
+  .pDesc:hover {
+    border-color: rgb(50, 159, 196);
+  }
+
+}
+
+@media only screen and (min-width: 780px) and (max-width: 1350px) {
+
+  .container {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+
+  .navbar {
+    width: 100vw;
+    height: 15vh;
+  }
+
+  .logo {
+    width: auto;
+    margin-top: 8px;
+  }
+
+  li {
+    margin-right: 45px;
+    margin-left: 25px;
+    font-size: 18px;
+  }
+
+  .homeImg {
+    width: 100vw;
+    height: auto;
+    margin: auto;
+  }
+
+  .imgText {
+    font-size: 25px;
+    letter-spacing: 2px;
+    padding: 2px;
+    margin-left: 0rem;
+  }
+
+  .homeAside2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .homePsico {
+    width: 100vw;
+    height: auto;
+    margin-right: 15rem;
+    margin-left: -4rem;
+    margin-top: 2rem;
+  }
+
+  .iframe-text {
+    font-size: 18px;
+    padding: 10px;
+    margin-left: -4rem;
+    letter-spacing: 0px;
+  }
+
+  .iframe {
+    display: none;
+  }
+
+  .foo {
+    justify-content: flex-start;
+    width: 100vw;
+    margin-top: 1rem;
+    margin-left: 0rem;
+    height: 10vh;
+    font-size: 11px;
+    letter-spacing: 1px;
+  }
+  
+  .redes-sociales {
+    margin-left: 2rem;
+    width: 40px;
+  }
+
+  .media {
+    margin-left: 5rem;
+  }
+
+  .pFoo {
+    margin-left: 10rem;
+  }
+
+  .formulario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 10px;
+    width: 50vw;
+    max-width: 450px;
+    margin-right: 45%;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    margin-left: 55%;
+    border: 2px solid rgba(20, 18, 18, 0.533); 
+    border-radius: 5%;
+  }
+  
+  .form {
+    color: rgba(20, 18, 18, 0.533);
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 80%;
+    text-align: center;
+  }
+
+  .bodyService {
+    overflow-x: hidden;
+  }
+
+  .servicios {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20rem;
+  }
+  
+  .iconos {
+    width: 45%;
+    margin-right: -5rem;
+    max-width: 150px;
+  }
+  
+  #servicioTitle {
+    margin: 2rem 0 2rem 3.5rem;
+    font-size: 35px;
+    letter-spacing: 3px;
+  }
+  
+  .sectionServicios {
+    display: none;
+  }
+  
+  .sectionDesc {
+    color: rgba(0, 0, 0, 0.722);
+    letter-spacing: 1.2px;
+    font-size: 12px;
+    width: 80%;
+    font-weight: normal;
+    padding: 5px;
+    margin-left: 4rem;
+    margin-top: 1rem;
+  }
+  
+  .pDesc {
+    border: double 2px black;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 2.5rem;
+    margin-left: 2rem;
+  }
+  
+  .pDesc:hover {
+    border-color: rgb(50, 159, 196);
+  }
+
+}
